@@ -163,6 +163,3 @@ Feel free to fork this repo and add more patterns!
 
 ---
 
-## 📌 Note
-
-Replace `<your-username>` and `<repo-name>` with your actual GitHub details.
