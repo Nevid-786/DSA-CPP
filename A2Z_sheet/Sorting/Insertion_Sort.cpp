@@ -1,25 +1,24 @@
 #include <iostream>
 using namespace std;
-void Bubble_Sort(int arr[],int n){
+void Insertion_Sort(int arr[],int n){
     
     for(int i=0;i<n-1;i++){
        
-        for (int j = 0; j < n-i-1; j++){
-            if(arr[j]>arr[j+1]){
-                swap(arr[j],arr[j+1]);
-            }
-
+        for (int j = i; j >0; j--){
+           if(arr[j]<arr[j-1]){
+            swap(arr[j],arr[j-1]);
+           }else{
+            break;
+           }
         }
         
-     
-
     }
 }
 
 int main() {
     int arr[] = {64, 34, 25, 12, 22, 11, 90};
     int n=sizeof(arr)/sizeof(int);
-    Bubble_Sort(arr,n);
+    Insertion_Sort(arr,n);
     for(int x:arr){
         cout<<x<<" ";
     }
