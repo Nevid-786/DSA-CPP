@@ -35,7 +35,8 @@ public:
 
         int n = nums.size();
         for (int i = 0; i < n - 1; i++) {
-            for (int j = 0; j < n - 1; j++) {
+            for (int j = i+1; j < n; j++) {
+                cout<<i<<j<<endl;
                 if (nums[i] + nums[j] == target) {
                     temp.push_back(i);
                     temp.push_back(j);
@@ -52,11 +53,11 @@ public:
 };
 
 int main() {
-    vector<int> v={1,4,6,2,4,42,3};
-    int target=44;
+    vector<int> v={3,2,4};
+    int target=6;
     Solution s;
     // v=s.twoSum_Value(v,target);
-    v=s.twoSum_Value(v,target);
+    v=s.twoSum_indexes(v,target);
    for(auto it:v){
     cout<<it<<",";
    }
