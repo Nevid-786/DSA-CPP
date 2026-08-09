@@ -66,26 +66,20 @@ class Solution {
 public:
 	// Remove duplicates from sorted list (retain one of each value)
 ListNode* deleteDuplicates(ListNode* head) {
-        ListNode* newHead=nullptr;
+        ListNode* newHead=head;
         ListNode* temp= nullptr;
         int count=0;
         
         while(head != NULL){
        
        while( head->next != nullptr && (head->val)==(head->next)->val){
+        temp=head;
         cout<<"skip:"<<head->val<<endl;
                 head=head->next;
                 continue;
             }
-            if(newHead==nullptr){
-                newHead=new ListNode(head->val);
-                temp=newHead;
-                head=head->next;
-                continue;
-            }
-            cout<<"insert:"<<head->val<<endl;
-            temp->next=new ListNode(head->val);
-            temp=temp->next;
+            temp->next=head;
+        
             head=head->next;
         }
         
