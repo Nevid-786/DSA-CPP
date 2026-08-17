@@ -7,6 +7,8 @@
 //     Output : [ 0, 0, 0, 0, 0, 1, 1, 1, 1, 1 ] 
 // https://www.geeksforgeeks.org/problems/segregate-0s-and-1s5106/1
 
+
+//brute force method
 #include <iostream>
 #include<bits/stdc++.h>
 using namespace std;
