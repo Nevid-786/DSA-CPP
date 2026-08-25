@@ -14,7 +14,7 @@
 using namespace std;
 class Solution {
   public:
-    void segregate0and1(vector<int> &arr) {
+    void segregate0and1_BRUTE(vector<int> &arr) {
         int Zeros=0;
         int Ones=0;
         int n=arr.size();
@@ -36,10 +36,28 @@ class Solution {
         }
         
     }
+      class Solution {
+  public:
+    void segregate0and1(vector<int> &arr) {
+        int i=0;
+        int j=arr.size()-1;
+      while(i<j){
+          while(arr[i]==0) i++;
+          while(arr[j]==1) j--;
+          
+          if(i<j) swap(arr[i],arr[j]);
+      }
+        
+    }
 };
+};
+
+
+
+
 int main() {
     Solution s;
-    vector<int> a={0, 1, 0, 1, 0, 0, 1, 1, 1, 0};
+    vector<int> a={0, 1, 0, 1,0};
   
     s.segregate0and1(a);
   for(int i=0;i<a.size();i++){
