@@ -36,7 +36,7 @@ class Solution {
         }
         
     }
-      class Solution {
+    
   public:
     void segregate0and1(vector<int> &arr) {
         int i=0;
@@ -50,7 +50,7 @@ class Solution {
         
     }
 };
-};
+
 
 
 
