@@ -8,21 +8,17 @@ public:
 
         while (l < n) {
             int h = l;
-            int sum = nums[l];
+            int sum =1;
 
             while (h < n) {
-
+                sum *= nums[h];
                 if (sum < k) {
                     count++;
                 }else {
                     break;
                 }
-                if(h<n-1){
-                    h++;
-                }else{
-                    break;
-            }
-                sum *= nums[h];
+           
+              h++;  
             }
             l++;
         }
