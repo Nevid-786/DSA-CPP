@@ -14,13 +14,7 @@ public:
                 }
                 l++;
             }
-        
-                int sum=0;
-                for(auto it:m){
-                 
-                      sum+=it.second;
-                      }
-                res=max(res,sum);
+                res=max(res,h-l+1);
             h++;
         }
       return res==INT_MIN?1:res;
