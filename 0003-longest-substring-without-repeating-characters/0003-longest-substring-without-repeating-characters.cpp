@@ -10,7 +10,7 @@ public:
         while(h<s.size()){
             m[s[h]]++;
             length=h-l+1;
-            cout<<length<<endl;
+            // cout<<length<<endl;
             
             while(length>m.size()){
                 // cout<<"l:"<<l <<endl;
@@ -21,7 +21,7 @@ public:
                 l++;
                 length=h-l+1;
             }
-            res=max(res,h-l+1); // as window have only 2 fruits therfore its lenth is equal to no. of fruits in window 
+            res=max(res,length); // as window have only 2 fruits therfore its lenth is equal to no. of fruits in window 
             h++;
         }
       return res==INT_MIN?1:res;
