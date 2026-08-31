@@ -1,7 +1,7 @@
 class Solution {
 public:
     int totalFruit(vector<int>& fruits) {
-        map<int,int>m;
+       unordered_map<int,int>m;
         int l=0;
         int h=0;
         int res=INT_MIN;
@@ -14,7 +14,7 @@ public:
                 }
                 l++;
             }
-                res=max(res,h-l+1);
+            res=max(res,h-l+1);
             h++;
         }
       return res==INT_MIN?1:res;
