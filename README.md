@@ -30,6 +30,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Nevid-786/DSA-CPP/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0141-linked-list-cycle](https://github.com/Nevid-786/DSA-CPP/tree/master/0141-linked-list-cycle) |
 | [0904-fruit-into-baskets](https://github.com/Nevid-786/DSA-CPP/tree/master/0904-fruit-into-baskets) |
 ## String
 |  |
@@ -39,4 +40,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/Nevid-786/DSA-CPP/tree/master/0004-median-of-two-sorted-arrays) |
+## Linked List
+|  |
+| ------- |
+| [0141-linked-list-cycle](https://github.com/Nevid-786/DSA-CPP/tree/master/0141-linked-list-cycle) |
+## Two Pointers
+|  |
+| ------- |
+| [0141-linked-list-cycle](https://github.com/Nevid-786/DSA-CPP/tree/master/0141-linked-list-cycle) |
+## Floyd's Cycle Finding Algorithm
+|  |
+| ------- |
+| [0141-linked-list-cycle](https://github.com/Nevid-786/DSA-CPP/tree/master/0141-linked-list-cycle) |
 <!---LeetCode Topics End-->
